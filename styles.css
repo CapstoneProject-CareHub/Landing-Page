@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1f2ef; /* Soft pastel blue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#slogo {
+    color: #a8ace6; /* Pastel blue */
+    font-size: 80px;
+    font-weight: bold;
+    display: flex; /* Use flexbox to align the image and text */
+    align-items: center; /* Vertically center the image and text */
+}
+
+#logo {
+    max-width: 100px; /* Use max-width to avoid distortion */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between the logo and the text */
+}
+
+#search-bar {
+    margin-top: 20px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

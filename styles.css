@@ -1,33 +1,121 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d1f2ef; /* Soft pastel blue */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('background.jpg'); /* Add this line */
+    background-size: cover; /* This will cover the entire viewport */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: center center; /* This will center the image */
 }
 
-#slogo {
-    color: #a8ace6; /* Pastel blue */
-    font-size: 80px;
-    font-weight: bold;
-    display: flex; /* Use flexbox to align the image and text */
-    align-items: center; /* Vertically center the image and text */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    background-color: rgb(2, 181, 252);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-#logo {
-    max-width: 100px; /* Use max-width to avoid distortion */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between the logo and the text */
+.logo {
+    flex: 1;
 }
 
-#search-bar {
-    margin-top: 20px;
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+.logo img {
+    max-height: 50px;
+    height: 100vh;
+}
+
+.nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+
+#storeLocator {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#storeLocator input, #storeLocator button {
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
     border-radius: 5px;
 }
+
+#storeLocator button {
+    background-color: #2E3131;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#storeLocator button:hover {
+    background-color: #464a4a;
+}
+
+#storeResults {
+    margin-top: 20px;
+}
+
+/* ...About us  ... */
+
+#about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This takes up the full viewport height */
+    text-align: center;
+    word-wrap: break-word; /* This will break long words to the next line */
+}
+
+#about-content h1 {
+    font-size: 2em; /* Adjust as needed */
+}
+
+#about-content p {
+    font-size: 1.5em; /* Adjust as needed */
+    max-width: 800px; /* This ensures the text isn't too wide on large screens */
+}
+
+
+#go-back {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
